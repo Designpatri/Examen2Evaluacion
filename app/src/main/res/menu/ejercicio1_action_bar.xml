@@ -2,22 +2,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/compartir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:title="Compartir" />
     <item
+        android:id="@+id/generarPdf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:title="Generar PDF" />
     <item
+        android:id="@+id/imprimir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:title="Imprimir" />
     <item
+        android:id="@+id/enviar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:title="Enviar" />
     <item
+        android:id="@+id/pagada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:title="Marcar como pagada" />

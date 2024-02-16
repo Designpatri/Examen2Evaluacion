@@ -11,7 +11,7 @@ import com.example.examen2evaluacion.databinding.ActivityEjercicio2AActionBarBin
 
 class Ejercicio2_A_Action_Bar_Activity : AppCompatActivity() {
 
-    //REALIZAR EL BINDING
+    //REALIZA/home/mikel/MenusAppR EL BINDING
     private lateinit var binding: ActivityEjercicio2AActionBarBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,16 +29,12 @@ class Ejercicio2_A_Action_Bar_Activity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when(item.itemId) {
-            R.id.return_ej2_a -> {
-                Toast.makeText(this, "Pulsado nuevo", Toast.LENGTH_SHORT).show()
+            R.id.siguiente -> {
+                val open2activity = Intent(this, Ejercicio2_B_Action_Bar_Activity::class.java)
+                startActivity(open2activity)
+
                 true
             }
-
-            R.id.return_ej2_a -> {
-                Toast.makeText(this, "Pulsado eliminar", Toast.LENGTH_SHORT).show()
-                true
-            }
-
             else ->
                 super.onOptionsItemSelected(item)
         }
